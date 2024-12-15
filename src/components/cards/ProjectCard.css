@@ -1,0 +1,29 @@
+/* Main card container */
+.card-container {
+    background: rgba(177, 199, 213, 0.7);  /* Lighter version of your theme */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(89, 79, 95, 0.1);
+    transition: transform 0.2s ease;
+
+}
+
+/* Add a gentle lift effect on hover */
+.card-container:hover {
+    transform: translateY(-5px);
+}
+
+.button {
+    padding: 8px 16px;  /* Comfortable padding around text */
+    border: none;       /* Remove default border */
+    border-radius: 4px; /* Slightly rounded corners */
+    background: #594f5f;  /* Using your theme purple */
+    color: white;        /* White text for contrast */
+    transition: all 0.2s ease;  /* Smooth transitions */
+}
+
+/* Hover effect */
+.button:hover {
+    background: #6d6275;  /* Slightly lighter shade */
+      /* Subtle lift effect */
+}

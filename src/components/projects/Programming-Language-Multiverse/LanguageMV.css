@@ -1,0 +1,56 @@
+/* Main container */
+.language-class-container {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-color: #e0e6eae5;
+}
+
+/* Page heading */
+.page-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#heading {
+    color: #594f5f;
+    font-size: 2.5rem;
+    font-weight: 00;
+}
+
+/* Cards container */
+.language-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Individual cards */
+.cards {
+    background: rgba(177, 199, 213, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(89, 79, 95, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+}
+
+/* Language name styling */
+.language-name {
+    color: #0066cc;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Description section */
+.language-description {
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.language-description p {
+    margin-bottom: 8px;
+}
