@@ -1,7 +1,7 @@
 import ProjectCard from "./components/cards/ProjectCard";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "./app.css";
+import "./App.css";
 import Counter from "./components/projects/Counter/Counter";
 import Gallery from "./components/projects/Image Gallery/Gallery";
 import LanguageMV from "./components/projects/Programming-Language-Multiverse/LanguageMV";
