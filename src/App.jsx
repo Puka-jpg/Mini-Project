@@ -8,6 +8,8 @@ import LanguageMV from "./components/projects/Programming-Language-Multiverse/La
 import Practice from "./components/projects/Practice/Practice";
 import Anagram from "./components/projects/Anagram Checker/Anagram/";
 import BGChanger from "./components/projects/BackGround Changer/BGChanger";
+import Stopwatch from "./components/projects/Stopwatch/Stopwatch";
+import MusicHub from "./components/projects/Music Playlist/Music";
 
 const PROJECTS = [
   {
@@ -47,7 +49,7 @@ const PROJECTS = [
     title: "Anargam Checker",
     description: "Page to check two words are anargam or not.",
     path: "/anargam",
-    date: "16-12-2024",
+    date: "15-12-2024",
     component: Anagram,
   },
   {
@@ -55,8 +57,24 @@ const PROJECTS = [
     title: "BackGround Changer",
     description: "Page to change Backgound color.",
     path: "/bgchanger",
-    date: "16-12-2024",
+    date: "15-12-2024",
     component: BGChanger,
+  },
+  {
+    id: "stopwatch",
+    title: "Stopwatch",
+    description: "Page for a stopwatch.",
+    path: "/stopwatchr",
+    date: "16-12-2024",
+    component: Stopwatch,
+  },
+  {
+    id: "MusicHub",
+    title: "Music Hub",
+    description: "Page containing different songs.",
+    path: "/musichub",
+    date: "16-12-2024",
+    component: MusicHub,
   },
 ];
 

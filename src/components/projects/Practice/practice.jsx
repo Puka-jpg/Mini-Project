@@ -1,33 +1,41 @@
 import { React, useState, useEffect } from "react";
+import BlogList from "./BlogList";
 
-function ColorChanger() {
-  const [backgroundColor, setBackgroundColor] = useState("white");
-  const [count, setCount] = useState(0);
-
-  // Effect that runs on every render
+function OutputingLists() {
+  const [blogs, setBlogs] = useState([
+    { title: "My new website", body: "lorem ipsum...", author: "mario", id: 1 },
+    { title: "Welcome party!", body: "lorem ipsum...", author: "yoshi", id: 2 },
+    {
+      title: "Web dev top tips",
+      body: "lorem ipsum...",
+      author: "mario",
+      id: 3,
+    },
+  ]);
+  const [name, setName] = useState("Pukar");
+  const handleDelete = (id) => {
+    const newBlogs = blogs.filter((blog) => blog.id !== id);
+    setBlogs(newBlogs);
+  };
   useEffect(() => {
-    console.log("Effect 1: I run on every render!");
-  });
-
-  // Effect that runs only when color changes
-  useEffect(() => {
-    console.log("Effect 2: I run only when color changes!");
-  }, [backgroundColor]);
+    console.log("Use effect ran");
+    console.log(name);
+  }, [name]);
 
   return (
-    <div style={{ backgroundColor, height: "100vh", width: "100%" }}>
-      <button
-        onClick={() =>
-          setBackgroundColor(
-            `#${Math.floor(Math.random() * 16777215).toString(16)}`
-          )
-        }
-      >
-        Change Color
-      </button>
-      <button onClick={() => setCount(count + 1)}>Count: {count}</button>
+    <div className="name">
+      <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete} />
+      {/* <BlogList
+        blogs={blogs.filter((blog) => blog.author === "yoshi")}
+        title="Yoshi's Blogs!"
+      />
+      <BlogList
+        blogs={blogs.filter((blog) => blog.author === "mario")}
+        title="Mario's blogs"
+      /> */}
+      <button onClick={() => setName("kafle")}>Change name</button>
     </div>
   );
 }
 
-export default ColorChanger;
+export default OutputingLists;
